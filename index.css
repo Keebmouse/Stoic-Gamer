@@ -16,7 +16,7 @@ header h1{
 }
 #navigation-bar{
     display: flex;
-    gap: 3rem;
+    gap: 3vw;
     justify-content: center;
     background-color: black;
 }
@@ -24,7 +24,7 @@ header h1{
     align-items: center;
     display: flex;
     padding: .5rem;
-    gap: 0.5rem;
+    gap: 1vw;
     justify-content: center;
     transition: transform 0.3s ease;
 }
@@ -32,20 +32,21 @@ header h1{
     transform: scale(1.2);
 }
 .image-button img{
-    width: 3rem;
+    width: 4vw;
     height: auto;
 }
 .image-button a {
     position: absolute;
     font-family: "Underdog", sans-serif;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: .125vw;
     color: whitesmoke;
     text-decoration: none;
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 1);
 }
 .image-button a:hover{
     color: green;
+    text-decoration: underline;
 }
 #main-content{
     display: flex;
@@ -53,13 +54,15 @@ header h1{
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
+}
+#main-content #scrollimg{
+    width: 100%;
 }
 #big-letter{
     color: whitesmoke;
     text-shadow: 10px 10px 5px black;
     position: absolute;
-    top: 30rem;
+    top: 70vh;
     left: 20vw;
 }
 #big-letter h1{
@@ -73,21 +76,21 @@ header h1{
     position: absolute;
     width: 90%;
     max-width: 50vw;
-    height: 200px;
-    top: 35rem;
-    left: 35rem;
+    height: 28vh;
+    top: 75vh;
+    left: 35vw;
     background-color: rgba(0, 0, 0, .5);
 }
 #main-article{
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 1.25rem;
     padding: 10px;
     position: absolute;
     width: 100%;
     max-width: 70vw;
-    height: 100rem;
-    top: 48rem;
-    left: 15rem;
+    height: 200vh;
+    top: 103vh;
+    left: 15vw;
     background-color: rgba(0, 0, 0, .5);
 }
 
