@@ -38,7 +38,7 @@ header h1{
 .image-button a {
     position: absolute;
     font-family: "Underdog", sans-serif;
-    font-size: 2rem;
+    font-size: 2vw;
     letter-spacing: .125vw;
     color: whitesmoke;
     text-decoration: none;
@@ -62,8 +62,8 @@ header h1{
     color: whitesmoke;
     text-shadow: 10px 10px 5px black;
     position: absolute;
-    top: 70vh;
-    left: 20vw;
+    top: 70%;
+    left: 20%;
 }
 #big-letter h1{
     font-family: "Underdog", sans-serif;
@@ -75,19 +75,19 @@ header h1{
     padding: 1rem;
     position: absolute;
     width: 90%;
-    max-width: 50vw;
-    height: 28vh;
-    top: 75vh;
-    left: 35vw;
+    max-width: 50.2%;
+    height: 28%;
+    top: 75%;
+    left: 35%;
     background-color: rgba(0, 0, 0, .5);
 }
 #main-article{
     color: whitesmoke;
     font-size: 1.25rem;
-    padding: 10px;
+    padding: 1rem;
     position: absolute;
     width: 100%;
-    max-width: 70vw;
+    max-width: 70%;
     height: 200vh;
     top: 103vh;
     left: 15vw;
