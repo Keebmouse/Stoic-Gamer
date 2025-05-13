@@ -83,3 +83,12 @@ header h1{
     left: 420px;
     background-color: rgba(0, 0, 0, .5);
 }
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .image-button img {
+        width: 30px;
+    }
+}
