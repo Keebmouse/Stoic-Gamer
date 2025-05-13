@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    width: 100%;
+}
+header h1{
+    color: whitesmoke;
+    font-family: "Underdog";
+    font-size: 48px;
+    text-align: center;
+}
+#navigation-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.image-button{
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+    gap: 0.5rem;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.image-button:hover{
+    transform: scale(1.2);
+}
+.image-button img{
+    width: 50px;
+    height: auto;
+}
+.image-button a {
+    position: absolute;
+    font-family: "Underdog";
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+.image-button a:hover{
+    color: green;
+}
+#main-content{
+    display: flex;
+    justify-content: center;
+}
+#big-letter{
+    color: whitesmoke;
+    text-shadow: 10px 10px 5px black;
+    position: absolute;
+    top: 380px;
+    left: 420px;
+}
+#big-letter h1{
+    position: absolute;
+    font-family: "Underdog";
+    font-size: 200px;
+}
+#first-paragraph{
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 420px;
+    left: 620px;
+    background-color: rgba(0, 0, 0, .5);
+}
+#main-article{
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    width: 700px;
+    height: 1150px;
+    top: 620px;
+    left: 420px;
+    background-color: rgba(0, 0, 0, .5);
+}
