@@ -40,7 +40,7 @@ header h1{
 .image-button a {
     position: absolute;
     font-family: "Underdog", sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: .125vw;
     color: whitesmoke;
     text-decoration: none;
@@ -66,7 +66,7 @@ body{
 }
 
 .content-grid{
-  top: 7rem;
+  top: 2rem;
   width: 75%;
   display: grid;
   position: relative;
@@ -77,7 +77,7 @@ body{
 }
 .grid-item1 h1{
   font-family: "Underdog", sans-serif;
-  font-size: 20rem;
+  font-size: 15rem;
   color: whitesmoke;
   text-shadow: 5px 5px 10px black;
   text-align: center;
