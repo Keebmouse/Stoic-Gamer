@@ -485,8 +485,7 @@ body{
   }
 
   .recent-header {
-    position: absolute;
-    top: 6rem;
+    position: relative;
     font-size: 2rem; /* Smaller header */
     margin: 1rem 0 5rem 0; /* Less margin */
     padding: 0.5rem;
