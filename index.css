@@ -110,6 +110,9 @@ body{
 }
 
 #recent1{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: 100%;
@@ -120,8 +123,12 @@ body{
 }
 #recent1:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent2{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -131,8 +138,12 @@ body{
 }
 #recent2:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent3{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -142,8 +153,12 @@ body{
 }
 #recent3:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent4{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -153,8 +168,12 @@ body{
 }
 #recent4:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent5{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -164,8 +183,12 @@ body{
 }
 #recent5:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent6{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -175,8 +198,12 @@ body{
 }
 #recent6:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent7{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -186,8 +213,12 @@ body{
 }
 #recent7:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent8{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -197,8 +228,12 @@ body{
 }
 #recent8:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 #recent9{
+  overflow: hidden;
+  border: 3px solid whitesmoke;
+  border-radius: 2em;
   gap: 0px;
   width: 25vw;
   height: auto;
@@ -208,14 +243,17 @@ body{
 }
 #recent9:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 .recent-title{
+  text-wrap: wrap;
   text-align: center;
+  align-content: center;
   border: 1px solid black;
   background-color: rgba(0, 0, 0, .6);
   font-family: "Underdog";
   color: whitesmoke;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .recent-short{
   color: whitesmoke;
@@ -223,19 +261,25 @@ body{
   font-size: 1.2rem;
   padding: 10px;
   width: 100%;
+  height: auto;
   justify-items: center;
-  height: 20vh;
   background-image: url("./media/Images/scroll75.png");
   background-size: cover;
 }
 .alpha-box{
-  border: 1px solid green;
+  text-align: center;
+  font-size: 1em;
+  border: 1px solid whitesmoke;
+  border-radius: .5em;
   width: 90%;
-  height: auto;
+  height: 100%;
   align-items: center;
   background-color: rgba(0, 0, 0, .6);
+  overflow: hidden;
 }
 .recent-data{
+  font-weight: 700;
+  font-size: 1.5rem;
   border: 1px solid black;
   background-color: rgba(255, 165, 0, .7);
   text-align: center;
@@ -248,7 +292,7 @@ body{
   justify-content: center;
 }
 .recent-header{
-  margin: 2rem;
+  margin: 2rem 0 5rem 0;
   padding: 1rem;
   text-align: center;
   font-family: "Underdog";
@@ -257,4 +301,8 @@ body{
   background-color: rgba(0, 0, 0, .6);
   border: 3px solid white;
   border-radius: 2rem;
+}
+#recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9{
+  grid-template-rows: 1fr 3fr 2rem;
+
 }
