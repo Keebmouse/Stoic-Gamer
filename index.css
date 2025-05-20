@@ -237,7 +237,160 @@ body{
 }
 
 /* Phones in portrait view (≤576px and portrait orientation) */
-@media (max-width: 700px) and (orientation: portrait) {
+@media (orientation: portrait){
+  body {
+    background-size: auto 100%; /* Adjust background image for portrait */
+  }
+  header{
+    position:fixed;
+  }
+  header h1 {
+    font-size: 2rem; /* Smaller header for portrait */
+  }
+
+  #navigation-bar {
+    top: 3rem;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    gap: 1vh; /* Tighter spacing */
+  }
+  body{
+    top: 6rem;
+  }
+  .image-button img {
+    width: 10vw; /* Larger relative width for visibility */
+    min-width: 50px;
+  }
+
+  .image-button a {
+    font-size: 1.5rem; /* Smaller text */
+  }
+
+  .content-grid {
+    width: 95%;
+    grid-template: 1fr auto / 1fr;
+  }
+
+  .about-item1 .dropcap {
+    font-size: 6rem; /* Smaller dropcap for portrait */
+  }
+
+  .about-item2, .about-item3 {
+    font-size: 1.2rem; /* Smaller text for content */
+  }
+
+  .recent-grid {
+    position: absolute;
+    width: 100vw;
+    top: 12rem;
+    grid-template-areas: 
+      "recent1"
+      "recent2"
+      "recent3"
+      "recent4"
+      "recent5"
+      "recent6"
+      "recent7"
+      "recent8"
+      "recent9";
+    row-gap: 3vh;
+  }
+  body{
+    width: 100vw;
+    background-image: url("./media/Images/PostScroll.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center top;
+  }
+  #recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9 {
+    width: 85vw;
+    min-height: 220px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .recent-title {
+    font-size: 1.3rem;
+    min-height: 40px;
+  }
+
+  .recent-short {
+    font-size: 1rem;
+    min-height: 120px;
+    padding: 5px;
+  }
+
+  .recent-data {
+    width: 100%;
+    min-height: 25px;
+    line-height: 25px;
+    font-size: 1.1rem;
+  }
+
+  .recent-header {
+    position: absolute;
+    top: 6rem;
+    font-size: 2rem; /* Smaller header */
+    margin: 1rem 0 5rem 0; /* Less margin */
+    padding: 0.5rem;
+  }
+}
+
+.about-item1{
+  grid-row: 1;
+  background-image: url('./media/Images/Illuminated.jpg');
+  background-size: cover;
+  border-radius: 5rem;
+  border-right: none;
+  border: 1px solid whitesmoke;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+} 
+
+.about-item1 .dropcap{
+
+  font-family: "Underdog", sans-serif;
+  font-size: 15rem;
+  color: whitesmoke;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+}
+.about-item2{
+  padding: 1rem;
+  border: 1px solid whitesmoke;
+  border-top-right-radius: 2rem;
+  border-bottom: 0;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.75rem;
+  grid-column: 2;
+}
+.about-item3{
+  padding: 1rem;
+  border: 1px solid whitesmoke;
+  border-top: 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  font-size: 2rem;
+  color: whitesmoke;
+  grid-column: span 2;
+  background-color: rgba(0, 0, 0, .5);
+}
+.content-grid{
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template:  1fr auto / 1fr 2fr;
+}
+
+@media (max-width: 700px) {
   body {
     background-size: auto 100%; /* Adjust background image for portrait */
   }
