@@ -74,9 +74,19 @@ body{
 }
 .about-item1{
   grid-row: 1;
+  background-image: url('./media/Images/Illuminated.jpg');
+  background-size: cover;
+  border-radius: 5rem;
+  border-right: none;
+  border: 1px solid whitesmoke;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
 } 
 
 .about-item1 .dropcap{
+
   font-family: "Underdog", sans-serif;
   font-size: 15rem;
   color: whitesmoke;
@@ -84,6 +94,10 @@ body{
   text-align: center;
 }
 .about-item2{
+  padding: 2rem;
+  border: 1px solid whitesmoke;
+  border-top-right-radius: 2rem;
+  border-bottom: 0;
   color: whitesmoke;
   background-color: rgba(0, 0, 0, .5);
   display: flex;
@@ -93,6 +107,11 @@ body{
   grid-column: 2;
 }
 .about-item3{
+  padding: 2rem;
+  border: 1px solid whitesmoke;
+  border-top: 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   font-size: 2rem;
   color: whitesmoke;
   grid-column: span 2;
@@ -106,144 +125,51 @@ body{
             "recent4 recent5 recent6"
             "recent7 recent8 recent9";
   justify-content: space-around;
+  max-height: fit-content;
   row-gap: 10vh;
 }
 
-#recent1{
+#recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9{
   overflow: hidden;
   border: 3px solid whitesmoke;
   border-radius: 2em;
   gap: 0px;
   width: 25vw;
-  height: 100%;
-  height: auto;
   display: grid;
-  grid-area: recent1;
   transition: transform 0.3s ease;
+  max-height: fit-content;
+
 }
-#recent1:hover{
+#recent1:hover, #recent2:hover, #recent3:hover, #recent4:hover, #recent5:hover, #recent6:hover, #recent7:hover, #recent8:hover, #recent9:hover{
   transform: scale(1.2);
   cursor: pointer;
+}
+#recent1{
+  grid-area: recent1;
 }
 #recent2{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent2;
-  transition: transform 0.3s ease;
-}
-#recent2:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent3{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  transition: transform 0.3s ease;
-  display: grid;
   grid-area: recent3;
 }
-#recent3:hover{
-  transform: scale(1.2);
-  cursor: pointer;
-}
 #recent4{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent4;
-  transition: transform 0.3s ease;
-}
-#recent4:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent5{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent5;
-  transition: transform 0.3s ease;
-}
-#recent5:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent6{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent6;
-  transition: transform 0.3s ease;
-}
-#recent6:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent7{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent7;
-  transition: transform 0.3s ease;
-}
-#recent7:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent8{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent8;
-  transition: transform 0.3s ease;
-}
-#recent8:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 #recent9{
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  border-radius: 2em;
-  gap: 0px;
-  width: 25vw;
-  height: auto;
-  display: grid;
   grid-area: recent9;
-  transition: transform 0.3s ease;
-}
-#recent9:hover{
-  transform: scale(1.2);
-  cursor: pointer;
 }
 .recent-title{
   text-wrap: wrap;
@@ -253,6 +179,7 @@ body{
   background-color: rgba(0, 0, 0, .6);
   font-family: "Underdog";
   color: whitesmoke;
+  min-height: auto;
   font-size: 1.5rem;
 }
 .recent-short{
@@ -261,7 +188,7 @@ body{
   font-size: 1.2rem;
   padding: 10px;
   width: 100%;
-  height: auto;
+  min-height: 12rem;
   justify-items: center;
   background-image: url("./media/Images/scroll75.png");
   background-size: cover;
@@ -272,7 +199,8 @@ body{
   border: 1px solid whitesmoke;
   border-radius: .5em;
   width: 90%;
-  height: 100%;
+  min-height: 11rem;
+  max-height: fit-content;
   align-items: center;
   background-color: rgba(0, 0, 0, .6);
   overflow: hidden;
@@ -280,6 +208,8 @@ body{
 .recent-data{
   font-weight: 700;
   font-size: 1.5rem;
+  min-height: 2rem;
+  align-content: center;
   border: 1px solid black;
   background-color: rgba(255, 165, 0, .7);
   text-align: center;
@@ -301,8 +231,4 @@ body{
   background-color: rgba(0, 0, 0, .6);
   border: 3px solid white;
   border-radius: 2rem;
-}
-#recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9{
-  grid-template-rows: 1fr 3fr 2rem;
-
 }
