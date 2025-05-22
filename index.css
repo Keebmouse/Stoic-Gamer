@@ -238,9 +238,6 @@ body{
 
 /* Phones in portrait view (portrait orientation) */
 @media (orientation: portrait){
-  body {
-    background-size: auto 100%; /* Adjust background image for portrait */
-  }
   header{
     z-index: 20;
     position:fixed;
@@ -256,9 +253,6 @@ body{
     width: 100%;
     justify-content: center;
     gap: 1vh; /* Tighter spacing */
-  }
-  body{
-    top: 6rem;
   }
   .image-button img {
     width: 10vw; /* Larger relative width for visibility */
@@ -299,6 +293,7 @@ body{
     row-gap: 3vh;
   }
   body{
+    top: 6rem;
     width: 100vw;
     background-image: url("./media/Images/PostScroll.png");
     background-size: cover;
@@ -392,9 +387,6 @@ body{
 }
 
 @media (orientation: landscape){
-  body {
-    background-size: auto 100%; /* Adjust background image for portrait */
-  }
   header{
     z-index: 20;
     position:fixed;
@@ -410,9 +402,6 @@ body{
     width: 100%;
     justify-content: center;
     gap: 1vh; /* Tighter spacing */
-  }
-  body{
-    top: 6rem;
   }
   .image-button img {
     width: 10vw; /* Larger relative width for visibility */
@@ -445,10 +434,11 @@ body{
       "recent3 recent4"
       "recent5 recent6"
       "recent7 recent8"
-      "recent9";
-    row-gap: 3vh;
+      "recent9 recent9";
+    gap: 3vh 3vh;
   }
   body{
+    top: 6rem;
     width: 100vw;
     background-image: url("./media/Images/PostScroll.png");
     background-size: cover;
