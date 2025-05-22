@@ -335,19 +335,17 @@ body{
     margin: 1rem 0 5rem 0; /* Less margin */
     padding: 0.5rem;
   }
-}
-
-.about-item1{
+  .about-item1{
   grid-row: 1;
-  background-image: url('./media/Images/Illuminated.jpg');
-  background-size: cover;
-  border-radius: 5rem;
-  border-right: none;
-  border: 1px solid whitesmoke;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  overflow: hidden;
+    background-image: url('./media/Images/Illuminated.jpg');
+    background-size: cover;
+    border-radius: 5rem;
+    border-right: none;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
 } 
 
 .about-item1 .dropcap{
@@ -391,6 +389,7 @@ body{
   grid-template:  1fr auto / 1fr 2fr;
 }
 
+}
 @media (max-width: 700px) {
   body {
     background-size: auto 100%; /* Adjust background image for portrait */
@@ -489,19 +488,18 @@ body{
     margin: 1rem 0 5rem 0; /* Less margin */
     padding: 0.5rem;
   }
-}
 
-.about-item1{
-  grid-row: 1;
-  background-image: url('./media/Images/Illuminated.jpg');
-  background-size: cover;
-  border-radius: 5rem;
-  border-right: none;
-  border: 1px solid whitesmoke;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  overflow: hidden;
+  .about-item1{
+    grid-row: 1;
+    background-image: url('./media/Images/Illuminated.jpg');
+    background-size: cover;
+    border-radius: 5rem;
+    border-right: none;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
 } 
 
 .about-item1 .dropcap{
@@ -543,4 +541,21 @@ body{
   display: grid;
   position: relative;
   grid-template:  1fr auto / 1fr 2fr;
+}
+}
+
+@media (orientation: landscape) and (max-width: 1000px){
+  .recent-grid{
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+              "recent1 recent2"
+              "recent3 recent4"
+              "recent5 recent6"
+              "recent7 recent8"
+              "recent9 recent9";
+    justify-content: space-around;
+    max-height: fit-content;
+    row-gap: 10vh;
+}
 }
