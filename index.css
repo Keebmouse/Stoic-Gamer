@@ -559,7 +559,7 @@ body{
     row-gap: 10vh;
   }
   #recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9 {
-    width: 85vw;
+    width: 45vw;
     min-height: 220px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   }
