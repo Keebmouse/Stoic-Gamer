@@ -557,5 +557,35 @@ body{
     justify-content: space-around;
     max-height: fit-content;
     row-gap: 10vh;
-}
+  }
+  #recent1, #recent2, #recent3, #recent4, #recent5, #recent6, #recent7, #recent8, #recent9 {
+    width: 85vw;
+    min-height: 220px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .recent-title {
+    font-size: 1.3rem;
+    min-height: 40px;
+  }
+
+  .recent-short {
+    font-size: 1rem;
+    min-height: 120px;
+    padding: 5px;
+  }
+
+  .recent-data {
+    width: 100%;
+    min-height: 25px;
+    line-height: 25px;
+    font-size: 1.1rem;
+  }
+
+  .recent-header {
+    position: relative;
+    font-size: 2rem; /* Smaller header */
+    margin: 1rem 0 5rem 0; /* Less margin */
+    padding: 0.5rem;
+  }
 }
