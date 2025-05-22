@@ -544,7 +544,7 @@ body{
 }
 }
 
-@media (orientation: landscape) and (max-width: 1000px){
+@media (orientation: landscape) and (pointer: coarse){
   .recent-grid{
     width: 90%;
     display: grid;
