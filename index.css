@@ -13,6 +13,20 @@
   height: auto;
   margin: 0 auto;
 }
+#blog-post img{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  align-content: center;
+}
+.text-container .quote{
+  display: flex;
+  font-style: italic;
+  font-size: 1.25em;
+  width: 80%;
+  margin: 0 auto;
+  align-content: center;
+}
 #post-title{
   font-family: "Underdog";
   font-size: 3rem;
