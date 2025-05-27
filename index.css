@@ -52,22 +52,27 @@ header{
   background-color: black;
   width: 100%;
   height: auto;
+  padding: 2rem;
+  text-wrap: wrap;
 }
 header h1{
-    color: whitesmoke;
-    font-family: "Underdog";
-    font-size: 1rem;
-    text-align: center;
-    padding: 0 10% 10% 10%;
-    background-color: rgba(0, 0, 0, .6);
-    border: .5rem solid whitesmoke;
-    border-radius: 2rem;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  color: whitesmoke;
+  font-family: "Underdog";
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .6);
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
 }
 #navigation-bar{
-    border-top: .5rem solid whitesmoke;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0);
+  border-top: 2px solid whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0);
 }
 .image-button{
     align-items: center;
@@ -292,6 +297,9 @@ body{
     top: 3rem;
     background-size: auto 100%; /* Adjust background image for portrait */
   }
+  #blog-post{
+    top: 10rem;
+  }
   header{
     background-image: none;
     z-index: 20;
@@ -305,23 +313,28 @@ body{
   }
 
   #navigation-bar {
-    top: 3rem;
+    top: 5rem;
     z-index: 20;
     position: fixed;
     width: 100%;
     justify-content: center;
     gap: 1vh; /* Tighter spacing */
     background-color: black;
-    border-bottom: 1rem solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
   }
-  body{
-    top: 6rem;
+  #blogpost{
+    top: 10rem;
   }
   .image-button img {
     width: 10vw; /* Larger relative width for visibility */
     min-width: 50px;
   }
-
+  .text-container p {
+    font-size: 1rem;
+  }
+  .text-container .quote{
+    font-size: 1.25rem;
+  }
   .image-button a {
     font-size: 1.5rem; /* Smaller text */
   }
