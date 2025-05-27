@@ -61,12 +61,12 @@ header h1{
   margin: 0 auto;
   color: whitesmoke;
   font-family: "Underdog";
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, .6);
   border: 2px solid whitesmoke;
-  border-radius: 2rem;
+  border-radius: 3rem;
 }
 #navigation-bar{
   border-top: 2px solid whitesmoke;
@@ -308,7 +308,7 @@ body{
   }
   header h1 {
     background-color: black;
-    font-size: 2rem; /* Smaller header for portrait */
+    font-size: 1rem; /* Smaller header for portrait */
     border: none;
   }
 
