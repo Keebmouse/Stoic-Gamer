@@ -49,16 +49,16 @@
 }
 header{
   background-image: url("./media/Images/stoicnavpanel.png");
-    background-color: black;
-    width: 100%;
-    padding: 2rem;
+  background-color: black;
+  width: 100%;
+  height: auto;
 }
 header h1{
     color: whitesmoke;
     font-family: "Underdog";
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 2rem;
+    padding: 0 10% 10% 10%;
     background-color: rgba(0, 0, 0, .6);
     border: .5rem solid whitesmoke;
     border-radius: 2rem;
